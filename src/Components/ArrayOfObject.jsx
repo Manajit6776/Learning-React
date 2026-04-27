@@ -15,13 +15,9 @@ function PrintArrayOfObject(){
             <div>
                 {
                     // this is .map which we use to access array value after create a copy of the array
-                    arrobj.map
-                    (
-                        (arrobj, index) => //this is the arrow function
-                        (
-                            <p>{fullname(arrobj)} is {arrobj.age} years old</p>
-                        )
-                    )
+                    arrobj.map((arrobj, index) => (
+                        <p>{fullname(arrobj)} is {arrobj.age} years old</p>
+                    ))
                 }
             </div>
         </>

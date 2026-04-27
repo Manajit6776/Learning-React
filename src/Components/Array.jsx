@@ -6,12 +6,9 @@ function PrintArray(){
             <h1>Array to List</h1>
             <ul>
                 {
-                    arr.map
-                    ( (arr, index) => 
-                        (
-                            <li>{index + 1} - {arr}</li>
-                        )
-                    )
+                    arr.map( (arr, index) => (
+                        <li>{index + 1} - {arr}</li>
+                    ))
                 }
             </ul>
         </>

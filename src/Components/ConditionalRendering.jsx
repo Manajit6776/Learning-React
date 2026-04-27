@@ -1,19 +1,25 @@
 function ConditionalRendering(){
 
-    let condition = false;
+    let condition = true;
 
-    // if(false){
-    //     return <><h1>Manajit</h1></>
+    // let message
+    // if(condition){
+    //     message = (<><h1>Welocome!</h1></>)
     // }
     // else
     // {
-    //     return <><h1>Mondal</h1></>
+    //     message = (<><h1>Please Login!</h1></>)
     // }
 
+    // return(
+    //     message
+    // )
+
     return(
-        <>
-            condition ? <h1>Welcome</h1> <h1>Please Login</h1>
-        </> 
+        <div className="conditionrendering">
+            <h1>Conditional Rendering</h1>
+            {condition ? (<><h1>Welcome</h1></>) : (<><h1>Please Login</h1></>)}
+        </div> 
     )
 
 }
