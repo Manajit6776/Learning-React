@@ -1,16 +1,16 @@
 function PrintObject(){
     let obj = {
-        firstName: "Peater", LastName: "Parker", Age: 22
+        firstName: "Peater", lastName: "Parker", Age: 22
     }
 
     function fullname(obj){
-        return (`${obj.firstName} ${obj.LastName}`);
+        return (`${obj.firstName} ${obj.lastName}`);
     }
 
     return(
         <>
             <h1>Object to para</h1>
-            <p>FullName: {fullname(obj)}</p>
+            <p>FullName: {fullname(obj)}</p> {/* <p>FullName: {obj.firstName} {obj.lastName}</p> */}
             <p>Age: {obj.Age}</p>
         </>
     )

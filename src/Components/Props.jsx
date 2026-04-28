@@ -40,4 +40,20 @@
 
 
 
+function Properties({name="Guest", age, city, obj={}}){
+
+    function fullname(obj){
+        return (`${obj.firstName} ${obj.lastName}`);
+    }
+
+    return(
+        <>
+            <h1>Hello {name}</h1>
+            <p>Age: {age}</p>
+            <p>City: {city}</p>
+            <p>Full name: {obj.firstName} {obj.lastName}</p>
+        </>
+    )
+}
+
 export default Properties

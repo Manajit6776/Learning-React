@@ -16,7 +16,7 @@ function ConditionalRendering(){
     // )
 
     return(
-        <div className="conditionrendering">
+        <div className="border-box">
             <h1>Conditional Rendering</h1>
             {condition ? (<><h1>Welcome</h1></>) : (<><h1>Please Login</h1></>)}
         </div> 

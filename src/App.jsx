@@ -12,14 +12,19 @@ import PrintArrayOfObject from './Components/ArrayOfObject'
 import ConditionalRendering from './Components/ConditionalRendering'
 import Properties from './Components/Props'
 
+// import Counter from './Components/State'
+// import ToggleText from './Components/State'
+// import Liked from './Components/State'
+import User from './Components/State'
+
+
+
 function App() {
 
-  if(true)
-  {
-
-  }
-
   const hobbies=["nightride", "business", "superherro"];
+  let obj = {
+        firstName: "Peater", lastName: "Parker", Age: 22
+    }
   
   return(
     <>
@@ -38,9 +43,19 @@ function App() {
 
       {/* Props */}
       <div className='Properties'>
-        <div><Properties name="Bruce" age="32" city="Gotham" hobbies={["nightride", "business", "superherro"]}/></div>
-        <div><Properties age="22" city="NoWhere"/></div>
+        <div className='border-box'><Properties name="Bruce" age="32" city="Gotham" hobbies={["nightride", "business", "superherro"]}/></div>
+        <div className='border-box'><Properties age="22" city="NoWhere" obj={obj}/></div>
       </div>
+
+      {/* useState: Event Handle */}
+      <div className='border-box'>
+        <h1>useState</h1>
+        {/* <Counter /> */}
+        {/* <ToggleText/> */}
+        {/* <Liked/> */}
+        <User name="User" age={20} city="NoWhere"/>
+      </div>
+
 
       <Bye />
     </>
